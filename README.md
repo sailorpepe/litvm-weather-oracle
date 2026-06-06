@@ -5,7 +5,7 @@
 
   <p>
     <a href="https://the-undesirables.com/weather"><strong>Live Dashboard</strong></a> ·
-    <a href="https://litescan.info/address/0x9955afC8AE25405ed9FcE66c23fa8E02eB3b6696"><strong>Verified Contract</strong></a>
+    <a href="https://liteforge.explorer.caldera.xyz/address/0x9955afC8AE25405ed9FcE66c23fa8E02eB3b6696"><strong>Verified Contract</strong></a>
   </p>
 </div>
 
@@ -27,7 +27,7 @@ This project is built using a hybrid architecture to ensure both on-chain transp
 The `WeatherEdgeOracle` is deployed natively on LiteForge. It accepts an hourly Merkle root of the detected edges, allowing anyone to cryptographically verify historical pricing models without exposing the proprietary algorithms that produced them.
 
 - **Network:** LiteForge Testnet (Chain ID 4441)
-- **Contract Address:** [`0x9955afC8AE25405ed9FcE66c23fa8E02eB3b6696`](https://litescan.info/address/0x9955afC8AE25405ed9FcE66c23fa8E02eB3b6696)
+- **Contract Address:** [`0x9955afC8AE25405ed9FcE66c23fa8E02eB3b6696`](https://liteforge.explorer.caldera.xyz/address/0x9955afC8AE25405ed9FcE66c23fa8E02eB3b6696)
 
 ### 🖥️ 2. The Dashboard (Open Source)
 The dashboard interface is fully open-source. It provides a real-time UI to view the Kalshi vs. NWS data, Kelly bet sizing, and HRRR divergence metrics.
@@ -46,7 +46,7 @@ The off-chain data-fetching, prediction modeling, and Merkle tree generation is 
 ## 🔗 Links
 
 - **Live Site**: [the-undesirables.com/weather](https://the-undesirables.com/weather)
-- **Contract**: [LiteForge Explorer](https://litescan.info/address/0x9955afC8AE25405ed9FcE66c23fa8E02eB3b6696)
+- **Contract**: [LiteForge Explorer](https://liteforge.explorer.caldera.xyz/address/0x9955afC8AE25405ed9FcE66c23fa8E02eB3b6696)
 - **Frontend Source**: [the-undesirables](https://github.com/sailorpepe/the-undesirables)
 - **X / Twitter**: [@undesirables_ai](https://x.com/undesirables_ai)
 
