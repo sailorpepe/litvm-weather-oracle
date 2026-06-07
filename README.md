@@ -1,7 +1,7 @@
 <div align="center">
-  <h1>🍄 Weather Alpha Dashboard</h1>
+  <h1>🌩️ LitVM Weather Oracle & Alpha Engine</h1>
 
-  <p><strong>An entirely new breed of on-chain oracle running on LitecoinVM (LitVM).</strong></p>
+  <p><strong>Immutable Oracle Infrastructure for Parametric DeFi & the M2M Economy.</strong></p>
 
   <p>
     <a href="https://the-undesirables.com/weather"><strong>Live Dashboard</strong></a> ·
@@ -11,35 +11,53 @@
 
 ---
 
-## 🌩️ Overview
+## 🏛️ Overview: The Oracle Problem
 
-The Weather Alpha Dashboard is a verifiable on-chain oracle that cross-references live National Weather Service (NWS) forecasts against Kalshi prediction markets to detect real-time pricing edges.
+Smart contracts are mathematically locked out of the real world. A DeFi protocol cannot make an API call to check if it rained in Chicago today—it only knows what is explicitly pushed to it on-chain. 
 
-Every hour, the full scan is Merkle-hashed and published on-chain via the `WeatherEdgeOracle` contract on LiteForge, creating an immutable, timestamped proof of the scanner's detection model.
+This creates a massive bottleneck for global risk hedging. How can a decentralized insurance protocol execute an automated payout for crop failure if the smart contract can't verify the weather?
+
+**The LitVM Weather Oracle solves this.** We bridge live National Weather Service (NWS) ASOS data and High-Resolution Rapid Refresh (HRRR) models directly on-chain. By hashing this data into a Merkle root and publishing it to the `WeatherEdgeOracle` contract on LiteForge every hour, we create an **immutable, cryptographically verified ledger of weather history** that smart contracts can trust.
 
 ---
 
-## 🏛️ Architecture
+## 🚀 Use Cases & Consumers
 
-This project is built using a hybrid architecture to ensure both on-chain transparency and off-chain execution speed.
+This infrastructure is not just for predicting the weather. It is the critical "Truth Layer" designed for:
 
-### ⛓️ 1. The Smart Contract (Open Source)
-The `WeatherEdgeOracle` is deployed natively on LiteForge. It accepts an hourly Merkle root of the detected edges, allowing anyone to cryptographically verify historical pricing models without exposing the proprietary algorithms that produced them.
+1. **Parametric DeFi Protocols**: 
+   Smart contracts can now execute purely code-enforced automation (if-so-then logic). 
+   *Example: A solar farm hedges its revenue. `IF [Oracle reports > 15 cloudy days] THEN [Instant USDC Payout].` No human claims adjusters, no delays.*
+2. **Decentralized Prediction Markets (e.g., Polymarket)**: 
+   Decentralized markets need an unbiased, code-driven resolution layer. Our smart contracts allow external prediction markets to resolve their weather outcomes trustlessly without relying on centralized committees.
+3. **Autonomous Quants (AI Agents)**: 
+   In the M2M (Machine-to-Machine) economy, autonomous trading bots can query our edge models to execute high-frequency trades on synthetic commodities or Web2 markets like Kalshi based on verified weather shifts.
 
-- **Network:** LiteForge Testnet (Chain ID 4441)
-- **Contract Address:** [`0x9955afC8AE25405ed9FcE66c23fa8E02eB3b6696`](https://liteforge.explorer.caldera.xyz/address/0x9955afC8AE25405ed9FcE66c23fa8E02eB3b6696)
+---
 
-### 🖥️ 2. The Dashboard (Open Source)
-The dashboard interface is fully open-source. It provides a real-time UI to view the Kalshi vs. NWS data, Kelly bet sizing, and HRRR divergence metrics.
-- **UI Repository:** [github.com/sailorpepe/the-undesirables](https://github.com/sailorpepe/the-undesirables)
+## 🧠 Architecture: Truth vs. Alpha
 
-### 🧠 3. The Shroomy Simulator Engine (Closed Source)
-The off-chain data-fetching, prediction modeling, and Merkle tree generation is handled by our proprietary backend engine. 
-- **Data Ingestion:** Pulls NWS forecasts across 10 major cities, ASOS 1-minute sensor observations, HRRR model divergence, and live Kalshi orderbooks.
-- **Edge Detection:** Calculates probability distributions using a Student's t-distribution. If the market price significantly disagrees with the modeled forecast, it flags an actionable edge and uses the **Kelly Criterion** for entry sizing.
-- **Ghost Trap Detection:** Identifies markets where temporary heat peaks (caught by 1-minute sensors) look like edges but are actually traps, saving users from getting burned.
+Our ecosystem operates in two distinct layers:
 
-*Note: The core strategy code remains closed-source to protect the proprietary alpha models, but all data outputs are immutably verified on LiteForge.*
+### 1. The Truth Layer (Oracle Infrastructure)
+The foundation. This layer acts as a strict cryptographic mirror of the National Weather Service. It pulls raw 1-minute ASOS sensor observations, verifies them via LitVM, and publishes the Merkle Root to the blockchain. 
+* **Value:** It prevents Web2 data providers from silently revising historical forecasts, establishing a permanent source of truth for DeFi applications.
+
+### 2. The Alpha Layer (The Edge Engine)
+Our proprietary off-chain application layer built on top of the Truth Layer. The "Shroomy Simulator" ingests the verified NWS data and cross-references it against live Kalshi orderbooks.
+* Calculates probability distributions using Student's t-distribution.
+* Detects actionable market edges using the **Kelly Criterion** for bet sizing.
+* Identifies **Ghost Traps** (temporary heat anomalies that trick retail traders) to protect algorithmic deployments.
+
+---
+
+## ⚖️ Disclaimer & Liability
+
+**This software is provided "AS-IS" for informational and historical documentation purposes only.**
+
+The Undesirables LLC operates this Oracle as an immutable data conduit reflecting public National Weather Service (NWS) APIs. We are **not** a financial institution, a registered investment advisor, or a hedge fund. We do not facilitate trades or manage funds. 
+
+If third-party developers, DeFi protocols, or autonomous AI agents choose to consume this data feed to build Parametric Insurance protocols, Prediction Markets, or automated trading strategies, they do so entirely at their own risk. The Undesirables LLC explicitly disclaims all liability for financial losses, liquidations, or faulty smart contract executions resulting from API downtime, data inaccuracies, or force majeure events.
 
 ---
 
