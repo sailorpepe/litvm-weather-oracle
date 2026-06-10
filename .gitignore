@@ -12,3 +12,8 @@ ENV/
 *.sqlite-wal
 *.sqlite-shm
 *.db
+
+# Environment files
+.env
+.env.*
+.env.local
