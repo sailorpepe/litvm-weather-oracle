@@ -17,3 +17,10 @@ ENV/
 .env
 .env.*
 .env.local
+
+# ── PROPRIETARY (real-local / mock-remote): the tracked oracle_worker.py is a
+# MOCK decoy (random.uniform). The REAL edge-fetching logic lives ONLY in these
+# ignored paths so `git add -A` can never stage it. NEVER un-ignore. ──
+oracle_worker_real.py
+*_real.py
+shroomy_engine/
