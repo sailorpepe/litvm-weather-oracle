@@ -13,6 +13,15 @@
 
 ## 🏛️ Overview: The Oracle Problem
 
+## 🔌 Connect over MCP — one URL, no install
+
+```
+https://mcp.the-undesirables.com
+```
+
+Paste into any MCP client (Claude, Cursor, ChatGPT) — free card search & forecasts, paid calls via x402.
+
+
 Smart contracts are mathematically locked out of the real world. A DeFi protocol cannot make an API call to check if it rained in Chicago today—it only knows what is explicitly pushed to it on-chain. 
 
 This creates a massive bottleneck for global risk hedging. How can a decentralized insurance protocol execute an automated payout for crop failure if the smart contract can't verify the weather?
