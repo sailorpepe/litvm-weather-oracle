@@ -11,6 +11,8 @@
 
 ---
 
+> **Status 2026-09-12.** The on-chain NWS weather Merkle oracle on LiteForge is live and refreshes hourly. The **weather-edge trading book that once consumed it is closed** — final result −18% ROI on official settlement (Aug 2026) — and the `/api/v1/arb-weather` scanner was retired (410). Nothing on this page is a trading signal or recommendation; the Kalshi/Polymarket material below describes the original research thesis, which did not survive live settlement.
+
 ## 🏛️ Overview: The Oracle Problem
 
 ## 🔌 Connect over MCP — one URL, no install
