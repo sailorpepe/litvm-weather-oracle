@@ -5,7 +5,7 @@
 
   <p>
     <a href="https://the-undesirables.com/weather"><strong>Live Dashboard</strong></a> ·
-    <a href="https://liteforge.explorer.caldera.xyz/address/0x9955afC8AE25405ed9FcE66c23fa8E02eB3b6696"><strong>Verified Contract</strong></a>
+    <a href="https://explorer.testnet.liteforge.zeeve.net/address/0x9955afC8AE25405ed9FcE66c23fa8E02eB3b6696"><strong>Verified Contract</strong></a>
   </p>
 </div>
 
@@ -75,7 +75,7 @@ If third-party developers, DeFi protocols, or autonomous AI agents choose to con
 ## 🔗 Links
 
 - **Live Site**: [the-undesirables.com/weather](https://the-undesirables.com/weather)
-- **Contract**: [LiteForge Explorer](https://liteforge.explorer.caldera.xyz/address/0x9955afC8AE25405ed9FcE66c23fa8E02eB3b6696)
+- **Contract**: [LiteForge Explorer](https://explorer.testnet.liteforge.zeeve.net/address/0x9955afC8AE25405ed9FcE66c23fa8E02eB3b6696)
 - **Frontend Source**: [the-undesirables](https://github.com/sailorpepe/the-undesirables)
 - **X / Twitter**: [@undesirables_ai](https://x.com/undesirables_ai)
 
